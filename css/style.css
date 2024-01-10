@@ -1,34 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inconsolata', monospace;
-    font-weight: 200;
-    font-size: 150px;
 }
 
 body {
-    text-align: center;
-    background: linear-gradient(to bottom,rgb(19, 220, 247), rgb(11, 240, 49));
-    min-height: 100vh
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
 }
 
-main{
-    display: inline-block;
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px 1px  rgba(0, 0, 0, 0.767), -1px -1px 4px 1px rgba(0, 0, 0, 0.767);    
+}
+
+.horarios-geral {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 2em;
+    margin: 0.5em;
+    font-size: 5em;
+    background-color: rgb(24, 22, 22);
+    box-shadow: 1px 1px 4px 1px rgba(29, 28, 28, 0.767), -1px -1px 4px 1px rgba(46, 44, 44, 0.678);
+    color: rgb(24, 22, 22);
+    padding: 1rem;
+}
+
+.show {
+    color: rgb(255, 255, 255);
+}
+
+button {
     position: relative;
+    bottom: -8em;
+    left: 50%;
+    padding: 0.3rem 0.6rem;
+    width: 4rem;
+    height: 1.7rem;
+    background-color: #ff0000;
+    border: none;
     border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.575);
-    padding: 20px;
-    margin-top: 13%;
-    display: inline-block;
-    background-color: rgb(0, 0, 0);
+    transition: .3s;
+    cursor: pointer;
 }
 
-div {
-    background-color: rgba(27, 27, 27, 0.788);
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.575);
-    color: #ffffff;
+.red:hover {
+    box-shadow: 2px 2px 10px 3px #ff00008e, -2px -2px 10px 3px #ff00008e;
 }
+
+.red {
+    background-color: #ff0000; 
+}
+
+.green {
+    background-color: #00ff00;
+}
+
+.green:hover {
+    box-shadow: 2px 2px 10px 3px #00ff00b7, -2px -2px 10px 3px #00ffb7;
+}
+
